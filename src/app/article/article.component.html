@@ -1,0 +1,42 @@
+<div class="card">
+  <div class="card-body">
+    <img
+      src="{{ articles.img }}"
+      style="width: 100px; height: 100px"
+      alt="could not found image"
+    />
+    <div class="link-class">
+      <h5 class="card-title">{{ articles.title }}</h5>
+      <p class="card-text">
+        {{ articles.link }}
+      </p>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="{{ articles.link }}"
+        class="btn btn-primary btn-sm"
+        >Go to link</a
+      >
+    </div>
+    <div class="voting-class">
+      <div class="value" style="font-weight: bold">
+        {{ articles.votes }}
+        <Label>Points</Label>
+      </div>
+      <ul>
+        <li class="item">
+          <a [routerLink]="" (click)="voteUp()">
+            <fa-icon class="thumpsUp" [icon]="faThumpsUp"></fa-icon>
+            upvote
+          </a>
+        </li>
+        <li class="item">
+          <a [routerLink]="" (click)="voteDown()">
+            <fa-icon class="thumpsDown" [icon]="faThumpsDown"></fa-icon>
+            downvote
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

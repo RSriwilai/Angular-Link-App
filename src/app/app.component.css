@@ -1,0 +1,14 @@
+.header {
+  margin: 25px auto;
+  text-align: center;
+}
+.container {
+  position: relative;
+  width: 60%;
+}
+form {
+  padding: 50px;
+  background-color: rgb(13, 148, 148);
+  border-radius: 5px;
+  margin-bottom: 100px;
+}

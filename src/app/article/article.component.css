@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.thumpsUp {
+  color: green;
+}
+.thumpsDown {
+  color: red;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+.link-class {
+  width: 50%;
+}
+.voting-class {
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-body {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .link-class {
+    text-align: center;
+  }
+
+  .voting-class {
+    text-align: start;
+    margin-left: 15px;
+  }
+}
